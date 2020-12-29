@@ -1,0 +1,111 @@
+// COLOR VARIABLES
+$color-primary: #c60e3b
+$color-secondary: #0f1d41
+$color-black: #262626
+$color-white: #f0f2f5
+$color-gray: #F0F2F5    
+    
+
+// SHADOWS
+$text-shadow-1: 3px 3px 6px rgba($color-black, .1)
+
+// FONT VARIABLES
+$font-primary: 'Roboto', sans-serif
+$font-primary-condensed: 'Roboto Condensed', sans-serif
+
+// RESPONSIVE BREAKPOINTS
+$bp-max-largest: 125em // 2000px
+$bp-largest: 75em // 1200px
+$bp-large: 62.5em // 1000px
+$bp-medium: 50em // 800px
+$bp-small: 37.5em // 600px
+$bp-smallest: 25em // 400px
+
+*,
+*::before,
+*::after
+    margin: 0
+    padding: 0
+    box-sizing: inherit
+
+html
+    box-sizing: border-box
+    font-size: 62.5% // 10px/16px = 62.5% -> 1rem = 10px
+    scroll-behavior: smooth
+
+    @media only screen and (max-width: $bp-largest)
+        font-size: 50%
+
+body
+    font-family: $font-primary
+    color: $color-black
+    font-weight: 400
+    line-height: 1.6
+    background: #ffffff
+
+p
+    margin-bottom: 1rem
+    line-height: 1.8
+    font-size: 1.6rem
+    font-weight: 300
+
+.row
+    max-width: 120rem
+    margin: 0 auto
+
+@mixin clearfix
+    &:after
+        content: ""
+        display: table
+        clear: both
+
+@mixin flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+
+.fullwidth 
+    position: relative
+    left: 50%
+    width: 100vw
+    transform: translate(-50%,0)
+
+.margin-top-large
+    margin-top: 10rem
+
+    @media only screen and (max-width: $bp-medium)
+        margin-top: 7rem
+
+.margin-top-medium
+    margin-top: 5rem
+
+    @media only screen and (max-width: $bp-medium)
+        margin-top: 3rem
+
+.margin-top-small
+    margin-top: 3rem
+
+    @media only screen and (max-width: $bp-medium)
+        margin-top: 1.5rem
+
+.margin-bottom-large
+    margin-bottom: 10rem
+
+    @media only screen and (max-width: $bp-medium)
+        margin-bottom: 7rem
+
+.margin-bottom-medium
+    margin-bottom: 5rem
+
+    @media only screen and (max-width: $bp-medium)
+        margin-bottom: 3rem
+
+.margin-bottom-small
+    margin-bottom: 3rem
+
+    @media only screen and (max-width: $bp-medium)
+        margin-bottom: 1.5rem
+
+
+::selection
+    background: rgba($color-primary, .5)

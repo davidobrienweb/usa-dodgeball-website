@@ -1,0 +1,31 @@
+.btn
+    color: $color-white
+    background: $color-primary
+    font-size: 400
+    text-transform: uppercase
+    padding: 1.3rem 4rem
+    font-size: 1.6rem
+    text-decoration: none
+    border-radius: 5rem
+    text-align: center
+    cursor: pointer
+    border: none
+    display: inline-block
+    transition: all .3s ease-in-out
+
+    &--header
+        font-size: 1.8rem
+        padding: 1.2rem 4rem
+        margin-top: 1rem
+        display: flex
+        align-items: center
+
+        &::after
+            font-family: fontAwesome
+            content: url("../img/btn-ball.svg")
+            position: relative
+            top: 3px
+            transition: all .3s ease-in-out
+
+        &:hover::after
+            left: .5em 
