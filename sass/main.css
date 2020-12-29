@@ -31,8 +31,24 @@ body {
 p {
   margin-bottom: 1rem;
   line-height: 1.8;
-  font-size: 1.6rem;
   font-weight: 300;
+  font-size: 1.6rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 .row {
@@ -256,9 +272,6 @@ p {
   height: 100%;
   background: #F0F2F5;
   z-index: -2;
-  margin: 0 -9999rem;
-  /* add back negative margin value */
-  padding: 50rem 9999rem;
   margin-top: 5rem;
 }
 
@@ -283,6 +296,7 @@ p {
   font-size: 2rem;
   color: #f0f2f5;
   font-weight: 700;
+  margin-bottom: 2rem;
 }
 
 .home-signup__container .btn-container {
@@ -341,6 +355,12 @@ p {
   text-decoration: none;
   color: #f0f2f5;
   text-transform: uppercase;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.nav__link a:hover {
+  color: #2196F3;
 }
 
 .btn {
@@ -383,5 +403,83 @@ p {
 
 .btn--header:hover::after {
   left: .5em;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+.footer__col-1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__col-1 ul {
+  -webkit-columns: 2;
+          columns: 2;
+  -webkit-column-gap: 6rem;
+          column-gap: 6rem;
+}
+
+.footer__col-1 li {
+  line-height: 3;
+}
+
+.footer__col-1 li a {
+  font-weight: 300;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.footer__col-1 li a:hover {
+  color: #c60e3b;
+}
+
+.footer__col-2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+}
+
+.footer__col-3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+.footer__follow {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.footer__icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__icon {
+  padding-right: 2rem;
+}
+
+.footer__btm-text {
+  text-align: center;
+}
+
+.footer__btm-text p {
+  font-size: 1.3rem;
 }
 /*# sourceMappingURL=main.css.map */
