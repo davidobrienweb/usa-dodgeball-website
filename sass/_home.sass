@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .header
     background: url("../img/home-header.jpg")
     background-size: cover
@@ -139,3 +140,146 @@
             margin: 0 auto
             display: flex
             justify-content: center
+=======
+.header
+    background: url("../img/home-header.jpg")
+    background-size: cover
+    background-repeat: none
+    height: 100vh
+    position: relative
+
+    &__textbox
+        color: $color-white
+        line-height: 1
+        position: absolute
+        right: 12%
+        top: 35%
+
+    &__center-text
+        display: flex
+        flex-direction: column
+        align-items: center
+    
+    &--welcome
+        font-size: 3.5rem
+        font-style: italic
+        text-align: left
+        line-height: 1
+        margin-bottom: 0
+        align-content: flex-start
+        text-shadow: $text-shadow-1
+        font-weight: 400
+
+    &--h1
+        font-size: 10rem
+        text-align: center
+        text-shadow: $text-shadow-1
+
+    &--p
+        font-size: 1.8rem
+        text-align: center
+        width: 50rem
+        margin-top: 2rem
+        text-shadow: $text-shadow-1
+
+
+.home-body
+
+    &__split
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        margin: 0 auto
+        max-width: 130rem
+        position: relative
+
+    &__text-container
+        max-width: 60rem
+
+    &__text
+        margin-bottom: 3rem
+
+    &__title
+        font-size: 3.5rem
+        text-transform: uppercase
+        font-weight: 700
+
+    &__img
+
+        img
+            width: 50rem
+            position: relative
+
+        &--1
+            position: relative
+            
+            &::after
+                content: ""
+                background: url(../img/sub-image-bk-1.svg)
+                position: absolute
+                background-size: auto 55%
+                background-repeat: no-repeat
+                background-position: center
+                top: 0px
+                right: 0px
+                bottom: 0px
+                left: 0px
+                z-index: -1
+
+        &--2
+            position: relative
+            
+            &::after
+                content: ""
+                background: url(../img/sub-image-bk-2.svg)
+                position: absolute
+                background-size: auto 55%
+                background-repeat: no-repeat
+                background-position: center
+                top: 0px
+                right: 0px
+                bottom: 0px
+                left: 0px
+                z-index: -1
+                
+
+.gray-bk
+    width: 100%
+
+    ::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        background: $color-gray
+        z-index: -2
+        margin-top: 5rem
+
+.home-signup
+    padding: 20rem 0
+    background-image: linear-gradient(to right bottom, rgba($color-secondary,0.75), rgba($color-secondary,0.75)),url(../img/member-background.jpg)
+    background-size: cover
+    background-position: top
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%)
+
+    &__container
+        margin: 0 auto
+
+        p
+            text-align: center
+            max-width: 30rem
+            margin: 0 auto
+            font-size: 2rem
+            color: $color-white
+            font-weight: 700
+            margin-bottom: 2rem
+
+        .btn-container
+            margin: 0 auto
+            display: flex
+            justify-content: center
+>>>>>>> fad94415c73cb05aa715a7029a12967b0ea6be7a
